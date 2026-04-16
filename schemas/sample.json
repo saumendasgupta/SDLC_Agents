@@ -1,0 +1,29 @@
+{
+  "feature_id": "SPD_001",
+  "module": "VehicleSpeed",
+  "requirement": "Vehicle speed shall be received from powertrain and displayed on cluster",
+  "requirement_type": "SYSTEM",
+
+  "source": {
+    "origin": "Codebeamer",
+    "input_signal": "vehicle_speed",
+    "source_component": "Powertrain ECU"
+  },
+
+  "processing": {
+    "logic": "Convert raw speed to km/h",
+    "target_component": "Vehicle HAL",
+    "transformation": "scale factor applied"
+  },
+
+  "output": {
+    "output_signal": "display_speed",
+    "ui_element": "Cluster speedometer",
+    "expected_behavior": "Speed displayed within 100ms"
+  },
+
+  "acceptance_criteria": [
+    "Speed updated every 100ms",
+    "Accuracy within ±2 km/h"
+  ]
+}

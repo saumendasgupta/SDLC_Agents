@@ -1,0 +1,5 @@
+pydantic
+langchain_ollama
+pandas
+openpyxl
+jsonschema
