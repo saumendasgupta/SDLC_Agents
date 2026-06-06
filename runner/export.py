@@ -36,7 +36,7 @@ def export_markdown_report(states, file_path="test/qa_test_report.md"):
     Path(file_path).parent.mkdir(parents=True, exist_ok=True)
 
     lines = [
-        "# EV Charge Publisher (ECPU) - Test Case Document",
+        "# Test Case Document",
         "",
         "**Project:** SDLC Auto-Generated",
         "**Service:** Requirement-grounded QA Pipeline",
