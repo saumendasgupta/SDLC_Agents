@@ -20,7 +20,7 @@ def main():
     print(f"Loaded {len(requirements)} requirements")
 
     # 👇 Step 2: Target requirements for focused QA validation
-    target_ids = {"616845", "616863"}
+    target_ids = {"123456", "789123"}
     requirements = [req for req in requirements if str(req.get("feature_id", "")).strip() in target_ids]
     print(f"Selected {len(requirements)} targeted requirements: {sorted(target_ids)}")
 
