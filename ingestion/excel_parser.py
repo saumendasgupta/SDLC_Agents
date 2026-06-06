@@ -26,7 +26,7 @@ def load_requirements(file_path, column_mapping):
 
     return requirements
 
-requirements = load_requirements("data/BL5_req.xlsx", column_mapping)
+requirements = load_requirements("data/req.xlsx", column_mapping)
 
 # test only first 3
 requirements = requirements[:3]
