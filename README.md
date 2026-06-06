@@ -316,7 +316,7 @@ data/
 Example:
 
 ```text
-data/BL5_req.xlsx
+data/req.xlsx
 ```
 
 ---
