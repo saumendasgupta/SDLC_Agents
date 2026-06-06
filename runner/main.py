@@ -15,11 +15,11 @@ def main():
     }
 
     # 👇 Step 1: Load Excel
-    requirements = load_requirements("data/BL5_req.xlsx", column_mapping)
+    requirements = load_requirements("data/req.xlsx", column_mapping)
 
     print(f"Loaded {len(requirements)} requirements")
 
-    # 👇 Step 2: Target EV-charge requirements for focused QA validation
+    # 👇 Step 2: Target requirements for focused QA validation
     target_ids = {"616845", "616863"}
     requirements = [req for req in requirements if str(req.get("feature_id", "")).strip() in target_ids]
     print(f"Selected {len(requirements)} targeted requirements: {sorted(target_ids)}")
